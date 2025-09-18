@@ -26,6 +26,29 @@ using namespace std;
 //     return 0;
 // }
 
+//Problem 13
+
+// int main() {
+//
+//     float a, b, c, discremenant;
+//
+//     cout << "Enter koefficent numbers of a quadratic function...: ";
+//     cin >> a >> b >> c;
+//
+//     discremenant = b * b - 4 * a * c;
+//
+//     if (discremenant < 0) {
+//         cout << "There is no answer when D < 0" << endl;
+//     }else if (discremenant == 0) {
+//         cout << "X = " << b/(2*a) << endl;
+//     }else {
+//         cout << "X1 = " << (b-sqrt(discremenant))/2*a << endl;
+//         cout << "X2 = " << (b+sqrt(discremenant))/2*a << endl;
+//     }
+//
+//     return 0;
+// }
+
 //Problem 14
 
 // int main() {
@@ -63,6 +86,23 @@ using namespace std;
 //         cout << "Package 1 has better price " << price1*weigh1 << " sum" << endl;
 //     }else {
 //         cout << "Package 2 has better price " << price2*weigh2 << " sum" << endl;
+//     }
+//
+//     return 0;
+// }
+
+//Problem 16
+
+// int main() {
+//
+//     int number;
+//     cout << "Enter a number containing three digits...: ";
+//     cin >> number;
+//
+//     if (number % 10 == number / 100) {
+//         cout << number << " is a palindrome" << endl;
+//     }else {
+//         cout << number << " is not a palindrome" << endl;
 //     }
 //
 //     return 0;
@@ -119,13 +159,15 @@ using namespace std;
 //
 // int main() {
 //
-//     float dayNumber, futureDay;
+//     int dayNumber, futureDay;
 //     vector<string> days = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 //
 //     cout << "Enter today's day: ";
 //     cin >> dayNumber;
 //     cout << "Enter the number of days elapsed since today (up to 6): ";
 //     cin >> futureDay;
+//
+//     futureDay = (dayNumber + futureDay) % 7;
 //
 //     cout << "Today is " << days[dayNumber] << endl;
 //     cout << "Future day is " << days[futureDay] ;
